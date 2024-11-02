@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <div class="content" >
+        <section>
+            <div class="formbox">
+                <form (ngSubmit)="onLogin(loginForm)" #loginForm="ngForm">
+                  <h1>LOGIN</h1>
+                
+                  <div class="inputbox">
+                    <mat-icon>mail</mat-icon>
+                    <input type="email" required [(ngModel)]="email" name="email">
+                    <label for="">Email</label>
+                  </div>
+                
+                  <div class="inputbox">
+                    <mat-icon>lock</mat-icon>
+                    <input type="password" required [(ngModel)]="password" name="password">
+                    <label for="">Password</label>
+                  </div>
+                
+                  <div class="forget">
+                    <label for="">
+                      <input type="checkbox"> Remember Me
+                      <a href="/forget">| Forget Password</a>
+                    </label>
+                  </div>
+                
+                  <button type="submit">Log in</button>
+                
+                  <div class="regester">
+                    <label for="">
+                      Don't have an account?
+                      <a href="/register">Register</a>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              
+
+        </section>
+    </div>

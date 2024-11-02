@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+
+
+<body class="fixed">
+    <section style="background-image: url(menu.png);" class="our-menu section bg-light repeat-img" id="menu">
+        <div class="sec-wp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-title text-center mb-5">
+                            <p class="sec-sub-titlee mb-3 menu-button">
+                                <a href="#" class="book-btn" style="text-decoration: none;"> Our Menu</a>
+                            </p>
+                            <h2 class="h2-title">wake up early, <span>eat fresh & healthy</span></h2>
+                            <div class="sec-title-shape mb-4">
+                                <img src="title-shape.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-xxl-5"> <!-- This row wraps around each group of 3 cards -->
+                    <div class="col-lg-4 col-sm-6" *ngFor="let item of table"> <!-- Each item takes 1/3 of the row -->
+                        <div class="dish-box text-center">
+                            <div class="dist-img">
+                                <img src="{{item.dish.image}}" style="width: 100%;">
+                            </div>
+                            <div class="dish-rating">
+                                {{item.dish.rating}}
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="dish-title">
+                                <h3>{{item.dish.name}}</h3>
+                                <p>{{item.dish.description}}</p>
+                            </div>
+                            <div class="dist-bottom-row">
+                                <ul>
+                                    <li>
+                                        <b>{{item.dish.price}}</b>
+                                    </li>
+                                    <li>
+                                        <button class="dish-add-btn">
+                                            <i class="uil uil-plus"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of row -->
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="book-table section bg-light">
+    <div class="book-table-shape">
+        <img src="images/table-leaves-shape.png" alt="">
+    </div>
+
+    <div class="book-table-shape book-table-shape2">
+        <img src="images/table-leaves-shape.png" alt="">
+    </div>
+
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center mb-5">
+                        <p class="sec-sub-title mb-3 book-button">
+                            <a href="#" class="book-btn" style="text-decoration: none; ">Book Table</a>
+                        </p>
+                        <h2 class="h2-title">Opening Table</h2>
+                        <div class="sec-title-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-table-info">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="table-title text-center">
+                            <h3>Friday</h3>
+                            <p>10:00 AM - 02:00 AM</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="phone-info">
+                            <i class="fas fa-phone phone-icon"></i>
+                            <p>+20 (10) 12312334</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="table-title text-center">
+                            <h3>Saturday to Thursday</h3>
+                            <p>09:00 AM - 12:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="call-now">
+                        <a href="tel:+201094875212" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>Book Now</a>
+                    </div>
+                </div>
+
+
+                <div class="table-divider">
+                    <div></div>
+                    <span></span>
+                    <div></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+    
+   
+    

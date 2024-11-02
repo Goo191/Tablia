@@ -1,0 +1,84 @@
+.carousel-control-prev {
+  left: 15%;
+}
+
+.carousel-control-next {
+  right: 15%;
+}
+
+.slide-wrapper{
+  margin-top: 100px;
+}
+.sec-sub-title {
+  text-transform: uppercase;
+  display: inline-block;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  padding: 10px 30px;
+  border-radius: 60px;
+  color: black;
+  font-size: 14px;
+}
+.sec-sub-title:hover{
+  color:#Eb6204
+}
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* To make them white by default */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(50%);
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+.carousel-indicators button {
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #Eb6204; /* Highlight active indicator */
+}
+.carousel-item img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active img {
+  opacity: 1;
+}
+.carousel-item img {
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.carousel-item img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05); /* Zooms in slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+.carousel-item img {
+  filter: brightness(0.95) contrast(1.1);
+  transition: filter 0.3s ease;
+}
+
+.carousel-item img:hover {
+  filter: brightness(1) contrast(1.1) saturate(1.2); /* Brighter on hover */
+}
+.carousel-item img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.carousel-item.active img {
+  opacity: 1;
+  transform: translateY(0);
+}

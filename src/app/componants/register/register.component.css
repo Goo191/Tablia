@@ -1,0 +1,75 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../../public/salad-tomatoes-greens-dressing-oil-feta-cheese-blue-plate-white-wooden-background-top-view-banner-website-52717635.jpg');
+    background-size: cover;
+    background-position: center;
+}  
+.card-body {
+    border: 2px solid rgb(16, 15, 15);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+
+}
+  h2 {
+    font-size: 1.8rem; /* Responsive heading size */
+  }
+
+  .form-control {
+    font-size: 1rem;
+  }
+
+  .custom-btn {
+    background-color:white;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+  }
+  .custom-btn:hover{
+    opacity: 0.9;
+    color: orange;
+  }
+  .form-outline {
+    margin-bottom: 1rem;
+  }
+  button{
+   
+    border-radius: 40px;
+    background: bisque;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover{
+    opacity: 0.9;
+    color: orange;
+  }
+
+ .form-check-input:checked {
+    background-color:orange;
+}
+u{
+  color:orange;
+    text-decoration: none;
+}
+
+u:hover{
+  text-decoration:none;
+        text-underline-offset: 2px ;
+        text-decoration: underline;
+        text-decoration-color: orange;
+}
+
+
+
+
+
+
+ 
+
+
